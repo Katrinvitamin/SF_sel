@@ -1,0 +1,86 @@
+{
+  "id": "2441e517-3380-4488-aca3-d035c1575106",
+  "version": "2.0",
+  "name": "SF opening ",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "c66c766d-a6bf-43c2-bace-ef1b07f5d964",
+    "name": "sf-t",
+    "commands": [{
+      "id": "40e4f7ec-c16a-470a-a525-a01777fce0f5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1dc5b35b-1a6e-48a0-a6a7-cb9fcaa3bca4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "784x694",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f231b40-5b29-465a-99fe-6545ba9a3e2c",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "skillfactory"
+    }, {
+      "id": "42f1bf5d-36fc-4b0b-aa93-58d0e82968c2",
+      "comment": "",
+      "command": "click",
+      "target": "name=btnK",
+      "targets": [
+        ["name=btnK", "name"],
+        ["css=center:nth-child(2) > .gNO89b", "css:finder"],
+        ["xpath=//input[@name='btnK']", "xpath:attributes"],
+        ["xpath=//center/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a7669aa-de65-4ced-b805-d78ad8bcc64b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.eKjLze a .iUh30",
+      "targets": [
+        ["css=.eKjLze a .iUh30", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/div/div/a/div/cite", "xpath:idRelative"],
+        ["xpath=//cite", "xpath:position"],
+        ["xpath=//cite[contains(.,'https://skillfactory.ru')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c5d2074-224e-47e8-a678-fa2b65af5ed2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Аналитика данных",
+      "targets": [
+        ["linkText=Аналитика данных", "linkText"],
+        ["css=.tn-elem__2932077841614853390700 > .tn-atom", "css:finder"],
+        ["xpath=//a[contains(text(),'Аналитика данных')]", "xpath:link"],
+        ["xpath=//div[@id='rec293207784']/div/div/div[45]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://skillfactory.ru/analitika-dannyh')])[2]", "xpath:href"],
+        ["xpath=//div[45]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Аналитика данных')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "278d7189-5e67-455d-a060-656a60f0311c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c66c766d-a6bf-43c2-bace-ef1b07f5d964"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
